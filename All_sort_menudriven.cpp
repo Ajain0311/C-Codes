@@ -56,20 +56,15 @@ class InsertionSort{
     public:
     int count = 0;
     void insertsort(int *arr, int n){
-        for(int i = 0;i<n;i++){
+        for(int i=0;i<n;i++){
             int key = arr[i];
-            for(int j = 1;j<n;j++){
-                if(key > arr[j]){
-                    swap(arr[i],arr[j]);
-                    for(int k = 0;k<=j;k++){
-                        if(key > arr[k])
-                        {
-                            swap(arr[i],arr[k]);
-                        }
-                    }
-                    continue;
-                }
+            int j = i-1;
+            while(j>=0 &&  key < arr[j]){
+                swap(arr[j],arr[j+1]);
+                j--;
+                count++;
             }
+            arr[j+1] = key;
         }
         for(int i=0;i<n;i++){
             cout<<arr[i]<<" ";
