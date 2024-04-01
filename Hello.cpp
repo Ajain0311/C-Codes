@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout<<"Ajain"<<endl;
+    cout<<"Ajain Master"<<endl;
     return 0;
 }
