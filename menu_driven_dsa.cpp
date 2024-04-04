@@ -214,6 +214,7 @@ int main() {
             }
             break;
 
+        case 3 : //stack
         case 10:
             cout << "Exiting..." << endl;
             break;
@@ -223,7 +224,6 @@ int main() {
 
         }
     } while (choice != 10);
-
     return 0;
 }
 
